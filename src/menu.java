@@ -3,6 +3,7 @@ public class menu {
 
 	Time twoSecDelay = new Time();
 
+	static UserPlayer Intro = new UserPlayer();
 	
 	int choice = 0;
 	
@@ -22,7 +23,7 @@ public class menu {
 		choice = keyboard.nextInt();
 		
 		if (choice == 1){
-			
+			Intro.PlayerIntro();
 		}
 		else {
 			System.out.println("Sorry we don't recognize that answer!");

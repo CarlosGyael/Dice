@@ -1,7 +1,7 @@
 
 public class Player {
 	
-	Time OneSec = new Time(); 
+	/*Time OneSec = new Time(); 
 	ComputerAnderson Anderson = new ComputerAnderson();
 	ComputerCarlos Carlos = new ComputerCarlos();
 	UserPlayer Username = new UserPlayer();
@@ -21,6 +21,6 @@ public class Player {
 		}
 			
 			
-	}
+	}*/
 
 }
