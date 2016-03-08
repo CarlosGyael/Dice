@@ -30,5 +30,29 @@ public class menu {
 		}
 		
 	}
+	
+	public void StartMenu(){
+		
+		System.out.println("Menu");
+		System.out.println("----");
+		
+		System.out.println("1. Single Player");
+		System.out.println("2. Multiplayer");
+		System.out.println("3. Exit");
+		
+		choice = keyboard.nextInt();
+		
+		if (choice ==1){
+			
+		}else if(choice ==2){
+			
+		}else if (choice == 3){
+			
+		}else {
+			System.out.println("Sorry we don't recognize that answer!");
+		}
+	}
+	
 
+	
 }

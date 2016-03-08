@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class UserPlayer extends Player{
 	
 	String Username;
+	int choice =0;
 
 	Scanner keyboard = new Scanner( System.in );
 	
 	Time OneSec = new Time();
+	menu StartUp = new menu();
 	
 	public String UserInput(){
 	
@@ -21,6 +23,8 @@ public class UserPlayer extends Player{
 		
 		UserInput();
 		
-		System.out.println(Username + " will now be taken to the main menu");
+		System.out.println("Hello " + Username + " Nice of you to play. ");
+		
+		StartUp.StartMenu();
 	}
 }
