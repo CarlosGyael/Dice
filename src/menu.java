@@ -7,6 +7,8 @@ public class menu {
 	
 	SinglePlayer newSinglePlayer = new SinglePlayer();
 	
+	Multiplayer newMultiplayer = new Multiplayer();
+	
 	boolean run = true;
 	int choice = 0;
 	
@@ -56,6 +58,8 @@ public class menu {
 			break;
 		}else if(choice ==2){
 			
+			newMultiplayer.Multiplayer();
+			break;
 		}else if (choice == 3){
 			
 		}else {
