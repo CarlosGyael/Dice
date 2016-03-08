@@ -2,12 +2,16 @@
 public class Main {
 	
 	static Time OneSec = new Time();
-	static UserPlayer Username = new UserPlayer();
+	static Player Username = new Player();
+	static menu start = new menu();
+
 
 	public static void main(String[] args) {
 		
-		
-		
+
+		start.menu();
+		System.out.println("");
+		System.out.println("Please enter a username:");
 		
 		
 		
