@@ -4,6 +4,8 @@ public class SinglePlayer {
 
 	int choice = 0;
 	
+	
+	
 	Scanner keyboard =new Scanner(System.in); 
 	
 	public void singlePlayer(){

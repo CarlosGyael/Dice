@@ -4,7 +4,7 @@ public class menu {
 	Time twoSecDelay = new Time();
 
 	static UserPlayer Intro = new UserPlayer();
-	
+	//DiceOption Dice = new DiceOption();
 	SinglePlayer newSinglePlayer = new SinglePlayer();
 	
 	boolean run = true;
@@ -62,6 +62,7 @@ public class menu {
 			System.out.println("Sorry we don't recognize that answer!");
 			
 		}
+		//Dice.Dice();
 		}
 	}
 	

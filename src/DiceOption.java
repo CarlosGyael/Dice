@@ -29,8 +29,10 @@ public class DiceOption {
 			if (choice ==1){
 				int DiceRoll = Dice.RandomFour();
 				System.out.println("Your dice landed on " + DiceRoll);
+				
 			}else if (choice == 2){
-				System.out.println("Your dice landed on " + Dice.RandomSix());
+				int DiceRoll = Dice.RandomSix();
+				System.out.println("Your dice landed on " + DiceRoll);
 			}
 		
 		
