@@ -2,12 +2,13 @@ import java.util.Scanner;
 public class menu {
 
 	Time twoSecDelay = new Time();
+
 	
 	int choice = 0;
 	
 	Scanner keyboard =new Scanner (System.in); 
 	public void menu() {
-
+		
 		System.out.println("Welcome to Dice Game!");
 
 		twoSecDelay.TwoSeconds();
