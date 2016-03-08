@@ -5,6 +5,8 @@ public class menu {
 
 	static UserPlayer Intro = new UserPlayer();
 	
+	SinglePlayer newSinglePlayer = new SinglePlayer();
+	
 	boolean run = true;
 	int choice = 0;
 	
@@ -26,6 +28,7 @@ public class menu {
 	
 		if (choice == 1){
 			Intro.PlayerIntro();
+			break;
 		}
 		else {
 			System.out.println("Sorry we don't recognize that answer!");
@@ -49,6 +52,8 @@ public class menu {
 		
 		if (choice ==1){
 			
+			newSinglePlayer.singlePlayer();
+			break;
 		}else if(choice ==2){
 			
 		}else if (choice == 3){
