@@ -3,7 +3,7 @@ public class menu {
 
 	Time twoSecDelay = new Time();
 
-	public void menu() {
+	public void menu(){
 
 		System.out.println("Welcome to Dice Game!");
 
