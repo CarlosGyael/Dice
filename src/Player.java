@@ -1,12 +1,14 @@
 
 public class Player {
 	
-	UserPlayer Username=new UserPlayer();
 	Time OneSec = new Time(); 
 	ComputerAnderson Anderson = new ComputerAnderson();
 	ComputerCarlos Carlos = new ComputerCarlos();
+	UserPlayer Username = new UserPlayer();
 	
 	int choice = 0;
+	
+	
 	
 	public void StartedGame(){
 		
