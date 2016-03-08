@@ -2,7 +2,7 @@
 public class Main {
 	
 	static Time OneSec = new Time();
-	static Player Username = new Player();
+	static UserPlayer Username = new UserPlayer();
 
 	public static void main(String[] args) {
 		
