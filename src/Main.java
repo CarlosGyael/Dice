@@ -5,6 +5,10 @@ public class Main {
 	static Player Username = new Player();
 	static menu start = new menu();
 	
+
+	static UserPlayer Username = new UserPlayer();
+
+
 	public static void main(String[] args) {
 		
 		start.menu();

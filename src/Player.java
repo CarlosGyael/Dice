@@ -1,16 +1,24 @@
-import java.util.Scanner;
+
 public class Player {
 	
-	String Username;
-
-	Scanner keyboard = new Scanner( System.in );
+	UserPlayer Username=new UserPlayer();
+	Time OneSec = new Time(); 
+	ComputerAnderson Anderson = new ComputerAnderson();
+	ComputerCarlos Carlos = new ComputerCarlos();
 	
-	public String UserInput(){
+	int choice = 0;
 	
-		Username = keyboard.next();
-	
-		return Username;
+	public void StartedGame(){
+		
+		OneSec.OneSecond();
+		
+			if (choice ==1){
+			System.out.println(Username.Username + " VS " + Anderson.Anderson());
+		}else if (choice ==2){
+			System.out.println(Username.Username + " VS " + Carlos.Carlos());
+		}
+			
+			
 	}
-	
-	
+
 }
