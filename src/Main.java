@@ -3,13 +3,12 @@ public class Main {
 	
 	static Time OneSec = new Time();
 	static Player Username = new Player();
-
+	static menu start = new menu();
+	
 	public static void main(String[] args) {
 		
-		System.out.println("Welcome to Dice Game!");
-		
-		OneSec.OneSecond();
-		
+		start.menu();
+		System.out.println("");
 		System.out.println("Please enter a username:");
 		
 		Username.UserInput();
