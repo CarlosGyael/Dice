@@ -366,11 +366,11 @@ int counter =0;
 			
 		
 		
+		
+		} 
 		run = false;
 		
 		menu start = new menu();
 		start.StartMenu();
-		} 
-		
 		}
 	}
