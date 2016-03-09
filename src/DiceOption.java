@@ -5,6 +5,7 @@ public class DiceOption {
 	RandomInteger getDice = new RandomInteger();
 	PointEngine getPoint = new PointEngine();
 	
+	
 	boolean run = true;
 	int choice = 0;
 	
@@ -210,7 +211,40 @@ public class DiceOption {
 				
 			}
 		
+		if (getPoint.CompPoint > getPoint.point){
+			System.out.println("I'm sorry you lost the game.");
+		}else if (getPoint.point > getPoint.CompPoint){
+			System.out.println("Congrats on winning the game!");
+		}else if (getPoint.point == getPoint.CompPoint){
+			System.out.println("Oh snap! Its a tie!");
+		}
 		
+		OneSec.TwoSeconds();
+	
+		System.out.println("Would you like to return to menu? ");
+		System.out.println("1. Yes");
+		System.out.println("2. No");
+		
+		choice = keyboard.nextInt();
+		
+		if (choice == 1){
+			break;
+		}else if (choice == 2){
+			System.out.println("Thank You For Playing Dice Game!");
+			try {
+				Thread.sleep(50000);                 //1000 milliseconds is one second.
+			} catch(InterruptedException ex) {
+				Thread.currentThread().interrupt();
 			}
+		}
+			
+		
+		
+		run = false;
+		
+		menu start = new menu();
+		start.StartMenu();
+		} 
+		
 		}
 	}
