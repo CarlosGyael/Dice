@@ -11,6 +11,8 @@ public class menu {
 	
 	DiceOption diceChoice = new DiceOption();
 	
+	DiceOptionMulti DiceChoiceMulti = new DiceOptionMulti();
+	
 	boolean run = true;
 	int choice = 0;
 	
@@ -61,7 +63,7 @@ public class menu {
 		}else if(choice ==2){
 			newMultiplayer.Multiplayer();
 			
-			//new dice class
+			DiceChoiceMulti.DiceMulti();
 			
 		}else if (choice == 3){
 			System.out.println("Thank You For Playing Dice Game!");
