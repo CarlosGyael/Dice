@@ -41,11 +41,11 @@ public class DiceOptionMulti {
 
 					OneSec.TwoSeconds(); 
 					
-					System.out.println("It's your turn to roll..");
+					System.out.println("Player 1 It's Player 1 turn to roll..");
 					
-					System.out.println("Your dice landed on " + DiceFour);
+					System.out.println("Player 1 dice landed on " + DiceFour);
 					 getPoint.addPoints(DiceFour);
-					System.out.println("Your current points: " + getPoint.point );
+					System.out.println("Player 1 current points: " + getPoint.point );
 					
 					OneSec.TwoSeconds();
 					
@@ -72,11 +72,11 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player 1 It's Player 1 turn to roll..");
 						
-						System.out.println("Your dice landed on " + DiceSix);
+						System.out.println("Player 1 dice landed on " + DiceSix);
 						 getPoint.addPoints(DiceSix);
-						System.out.println("Your current points: " + getPoint.point );
+						System.out.println("Player 1 current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						
@@ -102,11 +102,11 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player 1 It's Player 1 turn to roll..");
 						
-						System.out.println("Your dice landed on " + DiceEight);
+						System.out.println("Player 1 dice landed on " + DiceEight);
 						 getPoint.addPoints(DiceEight);
-						System.out.println("Your current points: " + getPoint.point );
+						System.out.println("Player 1 current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						
@@ -133,11 +133,11 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player 1 It's Player 1 turn to roll..");
 						
-						System.out.println("Your dice landed on " + DiceTen);
+						System.out.println("Player 1 dice landed on " + DiceTen);
 						 getPoint.addPoints(DiceTen);
-						System.out.println("Your current points: " + getPoint.point );
+						System.out.println("Player 1 current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						
@@ -160,11 +160,11 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player 1 It's Player 1 turn to roll..");
 						
-						System.out.println("Your dice landed on " + DiceTwelve);
+						System.out.println("Player 1 dice landed on " + DiceTwelve);
 						 getPoint.addPoints(DiceTwelve);
-						System.out.println("Your current points: " + getPoint.point );
+						System.out.println("Player 1 current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						
@@ -187,11 +187,11 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player 1 It's Player 1 turn to roll..");
 						
-						System.out.println("Your dice landed on " + DiceTwenty);
+						System.out.println("Player 1 dice landed on " + DiceTwenty);
 						 getPoint.addPoints(DiceTwenty);
-						System.out.println("Your current points: " + getPoint.point );
+						System.out.println("Player 1 current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						
