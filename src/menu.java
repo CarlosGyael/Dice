@@ -64,7 +64,7 @@ public class menu {
 		}else if(choice ==2){
 			newMultiplayer.Multiplayer();
 			
-			DiceChoiceMulti.DiceMulti(Intro);
+			DiceChoiceMulti.DiceMulti(Intro, newMultiplayer);
 			
 		}else if (choice == 3){
 			System.out.println("Thank You For Playing Dice Game!");

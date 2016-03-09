@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class Multiplayer {
 
 	int choice = 0;
-	String Username2;
+	public String Username2;
 	
 	Scanner keyboard =new Scanner(System.in);
 	
-	public String UserInput2(){
+	public void UserInput2(){
 		
-		Username2 = keyboard.next();
+		this.Username2 = keyboard.next();
 	
-		return Username2;
+	
 	}
 	
 	public void PlayerTwo(){
