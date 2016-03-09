@@ -1,7 +1,7 @@
 
 public class PointEngine {
-	int point = 0;
-	int CompPoint = 0;
+	public int point = 0;
+	public int CompPoint = 0;
 	public int getPoints(){
 		return point;
 	}

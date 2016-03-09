@@ -18,7 +18,7 @@ public final class RandomInteger {
 	
 	public int RandomFour() {
 
-		int randomInt = randomGenerator.nextInt(3)+1;
+		int randomInt = randomGenerator.nextInt(4)+1;
 		
 	    return randomInt;
 	}
