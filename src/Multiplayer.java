@@ -4,6 +4,7 @@ public class Multiplayer {
 
 	int choice = 0;
 	public String Username2;
+	Time OneSec= new Time();
 	
 	Scanner keyboard =new Scanner(System.in);
 	
@@ -32,7 +33,7 @@ public class Multiplayer {
 		
 		if (choice == 1){
 			PlayerTwo();
-			
+			OneSec.OneSecond();
 			System.out.println("Awesome! Let's Start!");
 			
 			
