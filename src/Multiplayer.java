@@ -12,6 +12,21 @@ public class Multiplayer {
 
 		choice = keyboard.nextInt();
 		
+	/*public String UserInput(){
+			
+			Username = keyboard.next();
+		
+			return Username;
+		}
+		
+		public void PlayerTwo(){
+
+			System.out.println("Please enter a username:");
+			
+			UserInput();
+			
+			System.out.println("Hello " + Username + " Nice of you to play. ");*/
+		
 		if (choice == 1){
 			System.out.println("Awesome! Let's Start!");
 		}
@@ -20,5 +35,6 @@ public class Multiplayer {
 		}
 		
 	}
+	
 	
 }
