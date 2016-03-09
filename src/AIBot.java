@@ -1,5 +1,5 @@
 
-public class AIBot {
+public class AIBot extends Player{
 
 	
 	public String Bot(){

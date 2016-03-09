@@ -1,7 +1,7 @@
 
 public class Player {
 	
-	/*Time OneSec = new Time(); 
+	Time OneSec = new Time(); 
 	AIBot Bot = new AIBot();
 	UserPlayer Username = new UserPlayer();
 	
@@ -9,7 +9,7 @@ public class Player {
 	
 	
 	
-	public void StartedGame(){
+	/*public void StartedGame(){
 		
 		OneSec.OneSecond();
 		
@@ -21,5 +21,4 @@ public class Player {
 			
 			
 	}*/
-
 }
