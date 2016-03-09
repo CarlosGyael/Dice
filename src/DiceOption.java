@@ -37,7 +37,7 @@ public class DiceOption {
 					
 				int DiceFour = getDice.RandomFour();
 					
-				OneSec.OneSecond(); 
+				OneSec.TwoSeconds(); 
 				
 				System.out.println("It's your turn to roll..");
 				
@@ -45,15 +45,17 @@ public class DiceOption {
 				 getPoint.addPoints(DiceFour);
 				System.out.println("Your current points: " + getPoint.point );
 				
-				OneSec.OneSecond();
+				OneSec.TwoSeconds();
 				
 				System.out.println("Computer is now rolling..");
 				
+				int DiceFourComp = getDice.RandomFour();
 				
 				OneSec.OneSecond();
-				System.out.println("It's dice landed on " + DiceFour);
-				 getPoint.addPoints(DiceFour);
+				System.out.println("It's dice landed on " + DiceFourComp);
+				 getPoint.addComp(DiceFourComp);
 				System.out.println("It's current points: " + getPoint.CompPoint );
+				System.out.println("-------------------------------");
 			}
 			
 
