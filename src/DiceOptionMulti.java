@@ -51,14 +51,24 @@ public class DiceOptionMulti {
 					
 					OneSec.TwoSeconds();
 					
+
 					System.out.println("" +User2.Username2+ " it's your turn to roll..");
+
+					System.out.println(""+ User2.Username2 + " it's your turn to roll..");
+
 					
 					int DiceFourComp = getDice.RandomFour();
 					
 					OneSec.OneSecond();
+
 					System.out.println("" +User2.Username2+ " dice landed on " + DiceFourComp);
 					 getPoint.addUser2(DiceFourComp);
 					System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
+
+					System.out.println(""+ User2.Username2 + " dice landed on " + DiceFourComp);
+					 getPoint.addUser2(DiceFourComp);
+					System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
+
 					System.out.println("-------------------------------");
 				}
 				
@@ -84,14 +94,24 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
+
 						System.out.println("" +User2.Username2+ " it's your turn to roll..");
+
+						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
+
 						
 						int DiceSixComp = getDice.RandomSix();
 						
 						OneSec.OneSecond();
+
 						System.out.println("" +User2.Username2+ " dice landed on " + DiceSixComp);
 						 getPoint.addUser2(DiceSixComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
+
+						System.out.println(""+ User2.Username2 + " dice landed on " + DiceSixComp);
+						 getPoint.addUser2(DiceSixComp);
+						System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
+
 						System.out.println("-------------------------------");
 					}
 					
@@ -116,14 +136,24 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
+
 						System.out.println("" +User2.Username2+ " it's your turn to roll..");
+
+						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
+
 						
 						int DiceEightComp = getDice.RandomEight();
 						
 						OneSec.OneSecond();
+
 						System.out.println("" +User2.Username2+ " dice landed on " + DiceEightComp);
 						 getPoint.addUser2(DiceEightComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
+
+						System.out.println(""+ User2.Username2 + " dice landed on " + DiceEightComp);
+						 getPoint.addUser2(DiceEightComp);
+						System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
+
 						System.out.println("-------------------------------");
 					}
 					
@@ -149,14 +179,24 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
+
 						System.out.println("" +User2.Username2+ " it's your turn to roll..");
+
+						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
+
 						
 						int DiceTenComp = getDice.RandomFour();
 						
 						OneSec.OneSecond();
+
 						System.out.println("" +User2.Username2+ " dice landed on " + DiceTenComp);
 						 getPoint.addUser2(DiceTenComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
+
+						System.out.println(""+ User2.Username2 + " dice landed on " + DiceTenComp);
+						 getPoint.addUser2(DiceTenComp);
+						System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
+
 						System.out.println("-------------------------------");
 					}
 				}else if (choice == 5){
@@ -178,14 +218,24 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
+
 						System.out.println("" +User2.Username2+ " it's your turn to roll..");
+
+						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
+
 						
 						int DiceTwelveComp = getDice.RandomFour();
 						
 						OneSec.OneSecond();
+
 						System.out.println("" +User2.Username2+ " dice landed on " + DiceTwelveComp);
 						 getPoint.addUser2(DiceTwelveComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
+
+						System.out.println(""+ User2.Username2 + " dice landed on " + DiceTwelveComp);
+						 getPoint.addUser2(DiceTwelveComp);
+						System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
+
 						System.out.println("-------------------------------");
 					}
 				}else if (choice == 6){
@@ -207,14 +257,24 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
+
 						System.out.println("" +User2.Username2+ " it's your turn to roll..");
+
+						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
+
 						
 						int DiceTwentyComp = getDice.RandomTwenty();
 						
 						OneSec.OneSecond();
+
 						System.out.println("" +User2.Username2+ " dice landed on " + DiceTwentyComp);
 						 getPoint.addUser2(DiceTwentyComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
+
+						System.out.println(""+ User2.Username2 + " dice landed on " + DiceTwentyComp);
+						 getPoint.addUser2(DiceTwentyComp);
+						System.out.println(" current points: " + getPoint.User2Point );
+
 						System.out.println("-------------------------------");
 					}
 				}

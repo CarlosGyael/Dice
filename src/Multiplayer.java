@@ -10,8 +10,7 @@ public class Multiplayer {
 	public void UserInput2(){
 		
 		this.Username2 = keyboard.next();
-	
-	
+
 	}
 	
 	public void PlayerTwo(){
