@@ -41,7 +41,7 @@ public class DiceOptionMulti {
 
 					OneSec.TwoSeconds(); 
 					
-					System.out.println("It's your turn to roll..");
+					System.out.println("Player2 your turn to roll..");
 					
 					System.out.println("Your dice landed on " + DiceFour);
 					 getPoint.addPoints(DiceFour);
@@ -49,14 +49,14 @@ public class DiceOptionMulti {
 					
 					OneSec.TwoSeconds();
 					
-					System.out.println("Player2 is now rolling..");
+					System.out.println("Player2 it's your turn to roll..");
 					
 					int DiceFourComp = getDice.RandomFour();
 					
 					OneSec.OneSecond();
-					System.out.println("It's dice landed on " + DiceFourComp);
+					System.out.println("Player2 dice landed on " + DiceFourComp);
 					 getPoint.addUser2(DiceFourComp);
-					System.out.println("It's current points: " + getPoint.User2Point );
+					System.out.println("Player2 current points: " + getPoint.User2Point );
 					System.out.println("-------------------------------");
 				}
 				
@@ -72,7 +72,7 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player2 your turn to roll..");
 						
 						System.out.println("Your dice landed on " + DiceSix);
 						 getPoint.addPoints(DiceSix);
@@ -80,14 +80,14 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Player2 is now rolling..");
+						System.out.println("Player2 it's your turn to roll..");
 						
 						int DiceSixComp = getDice.RandomSix();
 						
 						OneSec.OneSecond();
-						System.out.println("It's dice landed on " + DiceSixComp);
+						System.out.println("Player2 dice landed on " + DiceSixComp);
 						 getPoint.addUser2(DiceSixComp);
-						System.out.println("It's current points: " + getPoint.User2Point );
+						System.out.println("Player2 current points: " + getPoint.User2Point );
 						System.out.println("-------------------------------");
 					}
 					
@@ -102,7 +102,7 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player2 your turn to roll..");
 						
 						System.out.println("Your dice landed on " + DiceEight);
 						 getPoint.addPoints(DiceEight);
@@ -110,14 +110,14 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Player2 is now rolling..");
+						System.out.println("Player2 it's your turn to roll..");
 						
 						int DiceEightComp = getDice.RandomEight();
 						
 						OneSec.OneSecond();
-						System.out.println("It's dice landed on " + DiceEightComp);
+						System.out.println("Player2 dice landed on " + DiceEightComp);
 						 getPoint.addUser2(DiceEightComp);
-						System.out.println("It's current points: " + getPoint.User2Point );
+						System.out.println("Player2 current points: " + getPoint.User2Point );
 						System.out.println("-------------------------------");
 					}
 					
@@ -133,7 +133,7 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player2 your turn to roll..");
 						
 						System.out.println("Your dice landed on " + DiceTen);
 						 getPoint.addPoints(DiceTen);
@@ -141,14 +141,14 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Player2 is now rolling..");
+						System.out.println("Player2 it's your turn to roll..");
 						
 						int DiceTenComp = getDice.RandomFour();
 						
 						OneSec.OneSecond();
-						System.out.println("It's dice landed on " + DiceTenComp);
+						System.out.println("Player2 dice landed on " + DiceTenComp);
 						 getPoint.addUser2(DiceTenComp);
-						System.out.println("It's current points: " + getPoint.User2Point );
+						System.out.println("Player2 current points: " + getPoint.User2Point );
 						System.out.println("-------------------------------");
 					}
 				}else if (choice == 5){
@@ -160,7 +160,7 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player2 your turn to roll..");
 						
 						System.out.println("Your dice landed on " + DiceTwelve);
 						 getPoint.addPoints(DiceTwelve);
@@ -168,14 +168,14 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Player2 is now rolling..");
+						System.out.println("Player2 it's your turn to roll..");
 						
 						int DiceTwelveComp = getDice.RandomFour();
 						
 						OneSec.OneSecond();
-						System.out.println("It's dice landed on " + DiceTwelveComp);
+						System.out.println("Player2 dice landed on " + DiceTwelveComp);
 						 getPoint.addUser2(DiceTwelveComp);
-						System.out.println("It's current points: " + getPoint.User2Point );
+						System.out.println("Player2 current points: " + getPoint.User2Point );
 						System.out.println("-------------------------------");
 					}
 				}else if (choice == 6){
@@ -187,7 +187,7 @@ public class DiceOptionMulti {
 
 						OneSec.TwoSeconds(); 
 						
-						System.out.println("It's your turn to roll..");
+						System.out.println("Player2 your turn to roll..");
 						
 						System.out.println("Your dice landed on " + DiceTwenty);
 						 getPoint.addPoints(DiceTwenty);
@@ -195,14 +195,14 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Player2 is now rolling..");
+						System.out.println("Player2 it's your turn to roll..");
 						
 						int DiceTwentyComp = getDice.RandomTwenty();
 						
 						OneSec.OneSecond();
-						System.out.println("It's dice landed on " + DiceTwentyComp);
+						System.out.println("Player2 dice landed on " + DiceTwentyComp);
 						 getPoint.addUser2(DiceTwentyComp);
-						System.out.println("It's current points: " + getPoint.User2Point );
+						System.out.println("Player2 current points: " + getPoint.User2Point );
 						System.out.println("-------------------------------");
 					}
 				}
