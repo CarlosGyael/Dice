@@ -9,7 +9,7 @@ public final class RandomInteger {
 	
 	public int RandomSix() {
 
-		int randomInt = randomGenerator.nextInt(6);
+		int randomInt = randomGenerator.nextInt(5)+1;
 		
 		
 	    
@@ -18,7 +18,7 @@ public final class RandomInteger {
 	
 	public int RandomFour() {
 
-		int randomInt = randomGenerator.nextInt(4);
+		int randomInt = randomGenerator.nextInt(3)+1;
 		
 	    return randomInt;
 	}

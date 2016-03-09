@@ -10,7 +10,7 @@ public class DiceOption {
 	
 	Scanner keyboard =new Scanner (System.in); 
 	int DiceSix = getDice.RandomSix();
-	int DiceFour = getDice.RandomFour();
+	
 	Time OneSec = new Time();
 	
 	public void Dice(){
@@ -33,8 +33,13 @@ public class DiceOption {
 				System.out.println("Good choice. Let the games begin!");
 				
 				
-				//here
+				while (getPoint.getPoints()<100){
+					
+				int DiceFour = getDice.RandomFour();
+					
 				OneSec.OneSecond(); 
+				
+				System.out.println("It's your turn to roll..");
 				
 				System.out.println("Your dice landed on " + DiceFour);
 				 getPoint.addPoints(DiceFour);
@@ -44,13 +49,16 @@ public class DiceOption {
 				
 				System.out.println("Computer is now rolling..");
 				
+				
 				OneSec.OneSecond();
 				System.out.println("It's dice landed on " + DiceFour);
 				 getPoint.addPoints(DiceFour);
 				System.out.println("It's current points: " + getPoint.CompPoint );
-				//here
-				break;
-			}else if (choice == 2){
+			}
+			
+
+				
+		}	else if (choice == 2){
 				System.out.println("Good choice. Let the games begin!");
 				
 				
