@@ -11,5 +11,9 @@ public class PointEngine {
 	public int CompPoints(){
 		return CompPoint;
 	}
+	
+	public void addComp(int newpoints){
+		CompPoint+=newpoints;
+	}
 
 }
