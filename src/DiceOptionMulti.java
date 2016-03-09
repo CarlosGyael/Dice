@@ -17,7 +17,7 @@ public class DiceOptionMulti {
 	
 	public void DiceMulti(UserPlayer User){
 		
-		//Multiplayer User2 = new Multiplayer();
+		Multiplayer User2 = new Multiplayer();
 		
 		while (run){
 			System.out.println("Please choose the dice you want to use:");

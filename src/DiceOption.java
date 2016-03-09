@@ -32,9 +32,28 @@ public class DiceOption {
 			
 			if (choice ==1){
 				System.out.println("Good choice. Let the games begin!");
-				
+				int counter =0;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
+					
+					
+					if (counter >0){
+						OneSec.OneSecond();
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu");
+						
+						choice = keyboard.nextInt();
+						
+						if (choice ==1){
+							
+						}else if (choice ==2){
+							menu menu = new menu();
+							menu.StartMenu();
+						}
+						
+					}
+					
 					
 				int DiceFour = getDice.RandomFour();
 					
@@ -58,6 +77,7 @@ public class DiceOption {
 				 getPoint.addComp(DiceFourComp);
 				System.out.println("It's current points: " + getPoint.CompPoint );
 				System.out.println("-------------------------------");
+				 counter++;
 			}
 			
 
@@ -65,7 +85,27 @@ public class DiceOption {
 		}	else if (choice == 2){
 				System.out.println("Good choice. Let the games begin!");
 				
+int counter =0;
+				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
+					
+					
+					if (counter >0){
+						OneSec.OneSecond();
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu");
+						
+						choice = keyboard.nextInt();
+						
+						if (choice ==1){
+							
+						}else if (choice ==2){
+							menu menu = new menu();
+							menu.StartMenu();
+						}
+						
+					}
 					
 					int DiceSix = getDice.RandomSix();
 						
@@ -89,13 +129,34 @@ public class DiceOption {
 					 getPoint.addComp(DiceSixComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
 					System.out.println("-------------------------------");
+					counter++;
 				}
 				
 				
 			}else if (choice == 3){
 				System.out.println("Good choice. Let the games begin!");
 				
+int counter =0;
+				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
+					
+					
+					if (counter >0){
+						OneSec.OneSecond();
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu");
+						
+						choice = keyboard.nextInt();
+						
+						if (choice ==1){
+							
+						}else if (choice ==2){
+							menu menu = new menu();
+							menu.StartMenu();
+						}
+						
+					}
 					
 					int DiceEight = getDice.RandomEight();
 						
@@ -119,6 +180,7 @@ public class DiceOption {
 					 getPoint.addComp(DiceEightComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
 					System.out.println("-------------------------------");
+					counter++;
 				}
 				
 				
@@ -126,7 +188,27 @@ public class DiceOption {
 				
 				System.out.println("Good choice. Let the games begin!");
 				
+int counter =0;
+				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
+					
+					
+					if (counter >0){
+						OneSec.OneSecond();
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu");
+						
+						choice = keyboard.nextInt();
+						
+						if (choice ==1){
+							
+						}else if (choice ==2){
+							menu menu = new menu();
+							menu.StartMenu();
+						}
+						
+					}
 					
 					int DiceTen = getDice.RandomTen();
 						
@@ -150,10 +232,31 @@ public class DiceOption {
 					 getPoint.addComp(DiceTenComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
 					System.out.println("-------------------------------");
+					counter++;
 				}
 			}else if (choice == 5){
 				System.out.println("Good choice. Let the games begin!");
+int counter =0;
+				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
+					
+					
+					if (counter >0){
+						OneSec.OneSecond();
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu");
+						
+						choice = keyboard.nextInt();
+						
+						if (choice ==1){
+							
+						}else if (choice ==2){
+							menu menu = new menu();
+							menu.StartMenu();
+						}
+						
+					}
 					
 					int DiceTwelve = getDice.RandomTwelve();
 						
@@ -177,10 +280,31 @@ public class DiceOption {
 					 getPoint.addComp(DiceTwelveComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
 					System.out.println("-------------------------------");
+					counter++;
 				}
 			}else if (choice == 6){
 				System.out.println("Good choice. Let the games begin!");
+int counter =0;
+				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
+					
+					
+					if (counter >0){
+						OneSec.OneSecond();
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu");
+						
+						choice = keyboard.nextInt();
+						
+						if (choice ==1){
+							
+						}else if (choice ==2){
+							menu menu = new menu();
+							menu.StartMenu();
+						}
+						
+					}
 					
 					int DiceTwenty = getDice.RandomTwenty();
 						
@@ -204,6 +328,7 @@ public class DiceOption {
 					 getPoint.addComp(DiceTwentyComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
 					System.out.println("-------------------------------");
+					counter++;
 				}
 			}
 			else {
