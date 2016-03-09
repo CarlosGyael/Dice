@@ -3,12 +3,15 @@ import java.util.Scanner;
 public class DiceOption {
 	
 	RandomInteger getDice = new RandomInteger();
+	PointEngine getPoint = new PointEngine();
 	
 	
 	boolean run = true;
 	int choice = 0;
 	
 	Scanner keyboard =new Scanner (System.in); 
+	int DiceSix = getDice.RandomSix();
+	int DiceFour = getDice.RandomFour();
 	
 	public void Dice(){
 		
@@ -28,15 +31,17 @@ public class DiceOption {
 			
 			if (choice ==1){
 				System.out.println("Good choice. Let the games begin!");
-				break;
-				//int DiceRoll = Dice.RandomFour();
-				//System.out.println("Your dice landed on " + DiceRoll);
 				
+				System.out.println("Your dice landed on " + DiceFour);
+				
+				System.out.println("Your current points: " + getPoint.addPoints(newpoints + DiceFour));
+				break;
 			}else if (choice == 2){
 				System.out.println("Good choice. Let the games begin!");
+				
+				
+				System.out.println("Your dice landed on " + DiceSix);
 				break;
-				//int DiceRoll = Dice.RandomSix();
-				//System.out.println("Your dice landed on " + DiceRoll);
 			}else if (choice == 3){
 				System.out.println("Good choice. Let the games begin!");
 				break;
