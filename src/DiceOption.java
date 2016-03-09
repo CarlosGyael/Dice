@@ -33,10 +33,11 @@ public class DiceOption {
 				System.out.println("Good choice. Let the games begin!");
 				
 				
-				while (getPoint.getPoints()<100){
+				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
 				int DiceFour = getDice.RandomFour();
 					
+
 				OneSec.TwoSeconds(); 
 				
 				System.out.println("It's your turn to roll..");
