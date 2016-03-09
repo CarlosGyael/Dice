@@ -7,7 +7,7 @@ public class Multiplayer {
 	
 	Scanner keyboard =new Scanner(System.in);
 	
-	public String UserInput(){
+	public String UserInput2(){
 		
 		Username2 = keyboard.next();
 	
@@ -16,11 +16,11 @@ public class Multiplayer {
 	
 	public void PlayerTwo(){
 
-		System.out.println("Please enter a username:");
+		System.out.println("Please enter a username player 2:");
 		
-		UserInput();
+		UserInput2();
 		
-		System.out.println("Hello " + Username2 + " Nice of you to play. ");
+		System.out.println("Hello " + Username2 + " Nice of you to play as well! ");
 	}
 		
 	
@@ -32,11 +32,17 @@ public class Multiplayer {
 		
 		
 		if (choice == 1){
+			PlayerTwo();
+			
 			System.out.println("Awesome! Let's Start!");
+			
+			
 		}
 		else {
 			System.out.println("Sorry we don't recognize that command.");
 		}
+		
+		
 		
 	}
 	

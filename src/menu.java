@@ -59,10 +59,17 @@ public class menu {
 			newSinglePlayer.singlePlayer();
 			break;
 		}else if(choice ==2){
-			
 			newMultiplayer.Multiplayer();
-			break;
+			
+			//new dice class
+			
 		}else if (choice == 3){
+			System.out.println("Thank You For Playing Dice Game!");
+			try {
+				Thread.sleep(50000);                 //1000 milliseconds is one second.
+			} catch(InterruptedException ex) {
+				Thread.currentThread().interrupt();
+			}
 			
 		}else {
 			System.out.println("Sorry we don't recognize that answer!");

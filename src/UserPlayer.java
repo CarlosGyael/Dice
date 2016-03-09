@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UserPlayer extends Player{
+public class UserPlayer{
 	
 	String Username;
 	int choice =0;

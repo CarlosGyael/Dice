@@ -2,7 +2,7 @@
 public class Main {
 	
 	static Time OneSec = new Time();
-	static Player Username = new Player();
+	static UserPlayer Username = new UserPlayer();
 	static menu start = new menu();
 	
 
