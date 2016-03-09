@@ -17,6 +17,7 @@ public class DiceOption {
 	public void Dice(){
 		
 		while (run){
+			OneSec.OneSecond();
 		System.out.println("Please choose the dice you want to use:");
 		System.out.println("1. Dice4");
 		System.out.println("2. Dice6");
