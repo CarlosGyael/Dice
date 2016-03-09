@@ -2,8 +2,7 @@
 public class Player {
 	
 	/*Time OneSec = new Time(); 
-	ComputerAnderson Anderson = new ComputerAnderson();
-	ComputerCarlos Carlos = new ComputerCarlos();
+	AIBot Bot = new AIBot();
 	UserPlayer Username = new UserPlayer();
 	
 	int choice = 0;
@@ -15,9 +14,9 @@ public class Player {
 		OneSec.OneSecond();
 		
 			if (choice ==1){
-			System.out.println(Username.Username + " VS " + Anderson.Anderson());
-		}else if (choice ==2){
-			System.out.println(Username.Username + " VS " + Carlos.Carlos());
+			System.out.println(Username.Username + " VS " + Bot.Bot());
+		}else {
+			System.out.println("Sorry we don't recognize that answer!");
 		}
 			
 			

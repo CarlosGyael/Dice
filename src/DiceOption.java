@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class DiceOption {
 	
-	RandomInteger Dice = new RandomInteger();
+/*	RandomInteger Dice = new RandomInteger();
 	UserPlayer points = new UserPlayer();
 	
 	boolean run = true;
@@ -37,5 +37,5 @@ public class DiceOption {
 		
 		
 		
-		}
+		}*/
 	}
