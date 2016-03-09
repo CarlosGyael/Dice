@@ -3,7 +3,7 @@ import java.util.Random;
 public final class RandomInteger {
 	
 
-	UserPlayer point = new UserPlayer();
+	
 	
 	Random randomGenerator = new Random();
 	

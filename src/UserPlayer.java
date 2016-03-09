@@ -4,7 +4,7 @@ public class UserPlayer extends Player{
 	
 	String Username;
 	int choice =0;
-	int point = 0;
+	
 
 	Scanner keyboard = new Scanner( System.in );
 	
@@ -29,11 +29,5 @@ public class UserPlayer extends Player{
 		StartUp.StartMenu();
 	}
 	
-	public int getPoints(){
-		return point;
-	}
-	public void addPoints(int newpoints){
-		point+=newpoints;
-	}
 	
 }

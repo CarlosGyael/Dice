@@ -4,10 +4,12 @@ public class menu {
 	Time twoSecDelay = new Time();
 
 	static UserPlayer Intro = new UserPlayer();
-	//DiceOption Dice = new DiceOption();
+	
 	SinglePlayer newSinglePlayer = new SinglePlayer();
 	
 	Multiplayer newMultiplayer = new Multiplayer();
+	
+	DiceOption diceChoice = new DiceOption();
 	
 	boolean run = true;
 	int choice = 0;
@@ -66,8 +68,9 @@ public class menu {
 			System.out.println("Sorry we don't recognize that answer!");
 			
 		}
-		//Dice.Dice();
 		}
+		
+		diceChoice.Dice();
 	}
 	
 
