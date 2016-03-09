@@ -33,8 +33,8 @@ public class DiceOption {
 				System.out.println("Good choice. Let the games begin!");
 				
 				System.out.println("Your dice landed on " + DiceFour);
-				
-				System.out.println("Your current points: " + getPoint.addPoints(newpoints + DiceFour));
+				 getPoint.addPoints(DiceFour);
+				System.out.println("Your current points: ", getPoint.point );
 				break;
 			}else if (choice == 2){
 				System.out.println("Good choice. Let the games begin!");
