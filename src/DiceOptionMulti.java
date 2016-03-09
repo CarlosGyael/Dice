@@ -101,8 +101,38 @@ public class DiceOptionMulti {
 			}	else if (choice == 2){
 					System.out.println("Good choice. Let the games begin!");
 					
+					int counter = 0;
+					
 					while (getPoint.point < 50 && getPoint.User2Point < 50){
-						
+					
+						if (counter >0){
+							OneSec.OneSecond();
+							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+							}
+							OneSec.OneSecond();
+							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+						}
+						}
 						int DiceSix = getDice.RandomSix();
 							
 
@@ -131,13 +161,45 @@ public class DiceOptionMulti {
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
 						System.out.println("-------------------------------");
+						counter++;
 					}
 					
 					
 				}else if (choice == 3){
 					System.out.println("Good choice. Let the games begin!");
 					
+					int counter = 0;
+					
 					while (getPoint.point < 50 && getPoint.User2Point < 50){
+						
+						if (counter >0){
+							OneSec.OneSecond();
+							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+							}
+							OneSec.OneSecond();
+							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+						}
+						}
 						
 						int DiceEight = getDice.RandomEight();
 							
@@ -157,7 +219,6 @@ public class DiceOptionMulti {
 
 						System.out.println("" +User2.Username2+ " it's your turn to roll..");
 
-						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
 
 						
 						int DiceEightComp = getDice.RandomEight();
@@ -168,11 +229,9 @@ public class DiceOptionMulti {
 						 getPoint.addUser2(DiceEightComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
-						System.out.println(""+ User2.Username2 + " dice landed on " + DiceEightComp);
-						 getPoint.addUser2(DiceEightComp);
-						System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
 
 						System.out.println("-------------------------------");
+						counter++;
 					}
 					
 					
@@ -180,7 +239,38 @@ public class DiceOptionMulti {
 					
 					System.out.println("Good choice. Let the games begin!");
 					
+					int counter = 0;
+					
 					while (getPoint.point < 50 && getPoint.User2Point < 50){
+						
+						if (counter >0){
+							OneSec.OneSecond();
+							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+							}
+							OneSec.OneSecond();
+							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+						}
+						}
 						
 						int DiceTen = getDice.RandomTen();
 							
@@ -200,7 +290,6 @@ public class DiceOptionMulti {
 
 						System.out.println("" +User2.Username2+ " it's your turn to roll..");
 
-						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
 
 						
 						int DiceTenComp = getDice.RandomFour();
@@ -211,15 +300,46 @@ public class DiceOptionMulti {
 						 getPoint.addUser2(DiceTenComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
-						System.out.println(""+ User2.Username2 + " dice landed on " + DiceTenComp);
-						 getPoint.addUser2(DiceTenComp);
-						System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
+
 
 						System.out.println("-------------------------------");
+						counter++;
 					}
 				}else if (choice == 5){
 					System.out.println("Good choice. Let the games begin!");
+					
+					int counter = 0;
+					
 					while (getPoint.point < 50 && getPoint.User2Point < 50){
+						
+						if (counter >0){
+							OneSec.OneSecond();
+							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+							}
+							OneSec.OneSecond();
+							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+						}
+						}
 						
 						int DiceTwelve = getDice.RandomTwelve();
 							
@@ -237,8 +357,6 @@ public class DiceOptionMulti {
 						OneSec.TwoSeconds();
 						
 
-						System.out.println("" +User2.Username2+ " it's your turn to roll..");
-
 						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
 
 						
@@ -250,15 +368,45 @@ public class DiceOptionMulti {
 						 getPoint.addUser2(DiceTwelveComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
-						System.out.println(""+ User2.Username2 + " dice landed on " + DiceTwelveComp);
-						 getPoint.addUser2(DiceTwelveComp);
-						System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
 
 						System.out.println("-------------------------------");
+						counter++;
 					}
 				}else if (choice == 6){
 					System.out.println("Good choice. Let the games begin!");
+					
+					int counter = 0;
+					
 					while (getPoint.point < 50 && getPoint.User2Point < 50){
+						
+						if (counter >0){
+							OneSec.OneSecond();
+							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+							}
+							OneSec.OneSecond();
+							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+						}
+						}
 						
 						int DiceTwenty = getDice.RandomTwenty();
 							
@@ -278,8 +426,6 @@ public class DiceOptionMulti {
 
 						System.out.println("" +User2.Username2+ " it's your turn to roll..");
 
-						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
-
 						
 						int DiceTwentyComp = getDice.RandomTwenty();
 						
@@ -289,11 +435,8 @@ public class DiceOptionMulti {
 						 getPoint.addUser2(DiceTwentyComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
-						System.out.println(""+ User2.Username2 + " dice landed on " + DiceTwentyComp);
-						 getPoint.addUser2(DiceTwentyComp);
-						System.out.println(" current points: " + getPoint.User2Point );
-
 						System.out.println("-------------------------------");
+						counter++;
 					}
 				}
 				else {
