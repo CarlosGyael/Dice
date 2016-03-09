@@ -6,6 +6,7 @@ public class DiceOptionMulti {
 	PointEngine getPoint = new PointEngine();
 	
 	
+	
 	boolean run = true;
 	int choice = 0;
 	
@@ -14,7 +15,9 @@ public class DiceOptionMulti {
 	
 	Time OneSec = new Time();
 	
-	public void DiceMulti(){
+	public void DiceMulti(UserPlayer User){
+		
+		//Multiplayer User2 = new Multiplayer();
 		
 		while (run){
 			System.out.println("Please choose the dice you want to use:");
@@ -28,8 +31,6 @@ public class DiceOptionMulti {
 			choice = keyboard.nextInt();
 			
 			
-			
-				
 				if (choice ==1){
 					System.out.println("Good choice. Let the games begin!");
 					
@@ -41,12 +42,12 @@ public class DiceOptionMulti {
 
 					OneSec.TwoSeconds(); 
 					
-					System.out.println("Player 1 It's Player 1 turn to roll..");
+					System.out.println("It's " + User.Username + " turn to roll..");
 
 					
-					System.out.println("Player 1 dice landed on " + DiceFour);
+					System.out.println("" + User.Username + " dice landed on " + DiceFour);
 					 getPoint.addPoints(DiceFour);
-					System.out.println("Player 1 current points: " + getPoint.point );
+					System.out.println("" + User.Username + " current points: " + getPoint.point );
 					
 					OneSec.TwoSeconds();
 					
@@ -74,12 +75,12 @@ public class DiceOptionMulti {
 						OneSec.TwoSeconds(); 
 						
 
-						System.out.println("Player 1 It's Player 1 turn to roll..");
+						System.out.println("It's " + User.Username + " turn to roll..");
 
 						
-						System.out.println("Player 1 dice landed on " + DiceSix);
+						System.out.println("" + User.Username + " dice landed on " + DiceSix);
 						 getPoint.addPoints(DiceSix);
-						System.out.println("Player 1 current points: " + getPoint.point );
+						System.out.println("" + User.Username + " current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						
@@ -106,12 +107,12 @@ public class DiceOptionMulti {
 						OneSec.TwoSeconds(); 
 						
 
-						System.out.println("Player 1 It's Player 1 turn to roll..");
+						System.out.println("It's " + User.Username + " turn to roll..");
 
 						
-						System.out.println("Player 1 dice landed on " + DiceEight);
+						System.out.println("" + User.Username + " dice landed on " + DiceEight);
 						 getPoint.addPoints(DiceEight);
-						System.out.println("Player 1 current points: " + getPoint.point );
+						System.out.println("" + User.Username + " current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						
@@ -139,12 +140,12 @@ public class DiceOptionMulti {
 						OneSec.TwoSeconds(); 
 						
 
-						System.out.println("Player 1 It's Player 1 turn to roll..");
+						System.out.println("It's " + User.Username + " turn to roll..");
 
 						
-						System.out.println("Player 1 dice landed on " + DiceTen);
+						System.out.println("" + User.Username + " dice landed on " + DiceTen);
 						 getPoint.addPoints(DiceTen);
-						System.out.println("Player 1 current points: " + getPoint.point );
+						System.out.println("" + User.Username + " current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						
@@ -168,12 +169,12 @@ public class DiceOptionMulti {
 						OneSec.TwoSeconds(); 
 						
 
-						System.out.println("Player 1 It's Player 1 turn to roll..");
+						System.out.println("It's " + User.Username + " turn to roll..");
 
 						
-						System.out.println("Player 1 dice landed on " + DiceTwelve);
+						System.out.println("" + User.Username + " dice landed on " + DiceTwelve);
 						 getPoint.addPoints(DiceTwelve);
-						System.out.println("Player 1 current points: " + getPoint.point );
+						System.out.println("" + User.Username + " current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						
@@ -197,12 +198,12 @@ public class DiceOptionMulti {
 						OneSec.TwoSeconds(); 
 						
 
-						System.out.println("Player 1 It's Player 1 turn to roll..");
+						System.out.println("It's " + User.Username + " turn to roll..");
 
 						
-						System.out.println("Player 1 dice landed on " + DiceTwenty);
+						System.out.println("" + User.Username + " dice landed on " + DiceTwenty);
 						 getPoint.addPoints(DiceTwenty);
-						System.out.println("Player 1 current points: " + getPoint.point );
+						System.out.println("" + User.Username + " current points: " + getPoint.point );
 						
 						OneSec.TwoSeconds();
 						

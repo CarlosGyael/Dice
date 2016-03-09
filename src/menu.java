@@ -3,7 +3,7 @@ public class menu {
 
 	Time twoSecDelay = new Time();
 
-	static UserPlayer Intro = new UserPlayer();
+	UserPlayer Intro = new UserPlayer();
 	
 	SinglePlayer newSinglePlayer = new SinglePlayer();
 	
@@ -17,7 +17,7 @@ public class menu {
 	int choice = 0;
 	
 	Scanner keyboard =new Scanner (System.in); 
-	public void menu() {
+	public void getMenu() {
 		
 		System.out.println("Welcome to Dice Game!");
 
@@ -34,6 +34,7 @@ public class menu {
 	
 		if (choice == 1){
 			Intro.PlayerIntro();
+			StartMenu();
 			break;
 		}
 		else {
@@ -63,7 +64,7 @@ public class menu {
 		}else if(choice ==2){
 			newMultiplayer.Multiplayer();
 			
-			DiceChoiceMulti.DiceMulti();
+			DiceChoiceMulti.DiceMulti(Intro);
 			
 		}else if (choice == 3){
 			System.out.println("Thank You For Playing Dice Game!");
