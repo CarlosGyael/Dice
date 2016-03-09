@@ -49,7 +49,7 @@ public class DiceOptionMulti {
 					
 					OneSec.TwoSeconds();
 					
-					System.out.println("Computer is now rolling..");
+					System.out.println("Player2 is now rolling..");
 					
 					int DiceFourComp = getDice.RandomFour();
 					
@@ -80,7 +80,7 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Computer is now rolling..");
+						System.out.println("Player2 is now rolling..");
 						
 						int DiceSixComp = getDice.RandomSix();
 						
@@ -110,7 +110,7 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Computer is now rolling..");
+						System.out.println("Player2 is now rolling..");
 						
 						int DiceEightComp = getDice.RandomEight();
 						
@@ -141,7 +141,7 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Computer is now rolling..");
+						System.out.println("Player2 is now rolling..");
 						
 						int DiceTenComp = getDice.RandomFour();
 						
@@ -168,7 +168,7 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Computer is now rolling..");
+						System.out.println("Player2 is now rolling..");
 						
 						int DiceTwelveComp = getDice.RandomFour();
 						
@@ -195,7 +195,7 @@ public class DiceOptionMulti {
 						
 						OneSec.TwoSeconds();
 						
-						System.out.println("Computer is now rolling..");
+						System.out.println("Player2 is now rolling..");
 						
 						int DiceTwentyComp = getDice.RandomTwenty();
 						
