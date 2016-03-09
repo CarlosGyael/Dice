@@ -25,7 +25,7 @@ public class menu {
 	
 		while(run){
 		System.out.println("Did you finish reading the rules?");
-		System.out.println("Press 1 for Yes");
+		System.out.println("\nPress 1 for Yes");
 		
 		
 		choice = keyboard.nextInt();
