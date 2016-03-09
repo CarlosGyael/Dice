@@ -42,7 +42,7 @@ public class DiceOption {
 						OneSec.OneSecond();
 						System.out.println("Would you like to re-roll?");
 						System.out.println("1. Yes");
-						System.out.println("2. No (return to Start Menu");
+						System.out.println("2. No (return to Start Menu)"); 
 						
 						choice = keyboard.nextInt();
 						
@@ -77,7 +77,7 @@ public class DiceOption {
 				System.out.println("It's dice landed on " + DiceFourComp);
 				 getPoint.addComp(DiceFourComp);
 				System.out.println("It's current points: " + getPoint.CompPoint );
-				System.out.println("-------------------------------");
+				System.out.println("Your current points: " + getPoint.point+"-----------------" +"Computer current points: " + getPoint.CompPoint );
 				 counter++;
 			}
 			
@@ -95,7 +95,7 @@ int counter =0;
 						OneSec.OneSecond();
 						System.out.println("Would you like to re-roll?");
 						System.out.println("1. Yes");
-						System.out.println("2. No (return to Start Menu");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
@@ -129,7 +129,7 @@ int counter =0;
 					System.out.println("It's dice landed on " + DiceSixComp);
 					 getPoint.addComp(DiceSixComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
-					System.out.println("-------------------------------");
+					System.out.println("Your current points: " + getPoint.point+"-----------------" +"Computer current points: " + getPoint.CompPoint );
 					counter++;
 				}
 				
@@ -146,7 +146,7 @@ int counter =0;
 						OneSec.OneSecond();
 						System.out.println("Would you like to re-roll?");
 						System.out.println("1. Yes");
-						System.out.println("2. No (return to Start Menu");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
@@ -180,7 +180,7 @@ int counter =0;
 					System.out.println("It's dice landed on " + DiceEightComp);
 					 getPoint.addComp(DiceEightComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
-					System.out.println("-------------------------------");
+					System.out.println("Your current points: " + getPoint.point+"-----------------" +"Computer current points: " + getPoint.CompPoint );
 					counter++;
 				}
 				
@@ -198,7 +198,7 @@ int counter =0;
 						OneSec.OneSecond();
 						System.out.println("Would you like to re-roll?");
 						System.out.println("1. Yes");
-						System.out.println("2. No (return to Start Menu");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
@@ -232,7 +232,7 @@ int counter =0;
 					System.out.println("It's dice landed on " + DiceTenComp);
 					 getPoint.addComp(DiceTenComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
-					System.out.println("-------------------------------");
+					System.out.println("Your current points: " + getPoint.point+"-----------------" +"Computer current points: " + getPoint.CompPoint );
 					counter++;
 				}
 			}else if (choice == 5){
@@ -246,7 +246,7 @@ int counter =0;
 						OneSec.OneSecond();
 						System.out.println("Would you like to re-roll?");
 						System.out.println("1. Yes");
-						System.out.println("2. No (return to Start Menu");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
@@ -280,7 +280,7 @@ int counter =0;
 					System.out.println("It's dice landed on " + DiceTwelveComp);
 					 getPoint.addComp(DiceTwelveComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
-					System.out.println("-------------------------------");
+					System.out.println("Your current points: " + getPoint.point+"-----------------" +"Computer current points: " + getPoint.CompPoint );
 					counter++;
 				}
 			}else if (choice == 6){
@@ -294,7 +294,7 @@ int counter =0;
 						OneSec.OneSecond();
 						System.out.println("Would you like to re-roll?");
 						System.out.println("1. Yes");
-						System.out.println("2. No (return to Start Menu");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
@@ -328,7 +328,7 @@ int counter =0;
 					System.out.println("It's dice landed on " + DiceTwentyComp);
 					 getPoint.addComp(DiceTwentyComp);
 					System.out.println("It's current points: " + getPoint.CompPoint );
-					System.out.println("-------------------------------");
+					System.out.println("Your current points: " + getPoint.point+"-----------------" +"Computer current points: " + getPoint.CompPoint );
 					counter++;
 				}
 			}
