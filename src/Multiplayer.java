@@ -7,11 +7,11 @@ public class Multiplayer {
 	
 	Scanner keyboard =new Scanner(System.in);
 	
-	public String UserInput2(){
+	public void UserInput2(){
 		
-		Username2 = keyboard.next();
+		this.Username2 = keyboard.next();
 	
-		return Username2;
+		
 	}
 	
 	public void PlayerTwo(){
