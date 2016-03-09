@@ -92,7 +92,7 @@ public class DiceOptionMulti {
 					System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
 
-					System.out.println("-------------------------------");
+					System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 					counter ++;
 				}
 				
@@ -160,7 +160,7 @@ public class DiceOptionMulti {
 						 getPoint.addUser2(DiceSixComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
-						System.out.println("-------------------------------");
+						System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 						counter++;
 					}
 					
@@ -230,7 +230,7 @@ public class DiceOptionMulti {
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
 
-						System.out.println("-------------------------------");
+						System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 						counter++;
 					}
 					
@@ -302,7 +302,7 @@ public class DiceOptionMulti {
 
 
 
-						System.out.println("-------------------------------");
+						System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 						counter++;
 					}
 				}else if (choice == 5){
@@ -369,7 +369,7 @@ public class DiceOptionMulti {
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
 
-						System.out.println("-------------------------------");
+						System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 						counter++;
 					}
 				}else if (choice == 6){
@@ -435,7 +435,7 @@ public class DiceOptionMulti {
 						 getPoint.addUser2(DiceTwentyComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
-						System.out.println("-------------------------------");
+						System.out.println( User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 						counter++;
 					}
 				}
