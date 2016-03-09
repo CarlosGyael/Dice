@@ -34,8 +34,37 @@ public class DiceOptionMulti {
 				if (choice ==1){
 					System.out.println("Good choice. Let the games begin!");
 					
-					
+					int counter =0;
 					while (getPoint.point < 50 && getPoint.User2Point < 50){
+						
+						if (counter >0){
+							OneSec.OneSecond();
+							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+							}
+							OneSec.OneSecond();
+							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println("1. Yes");
+							System.out.println("2. No (return to Start Menu)");
+							
+							choice = keyboard.nextInt();
+							
+							if (choice ==1){
+								
+							}else if (choice ==2){
+								menu menu = new menu();
+								menu.StartMenu();
+						}
+						}
 						
 					int DiceFour = getDice.RandomFour();
 						
@@ -50,11 +79,8 @@ public class DiceOptionMulti {
 					System.out.println("" + User.Username + " current points: " + getPoint.point );
 					
 					OneSec.TwoSeconds();
-					
 
 					System.out.println("" +User2.Username2+ " it's your turn to roll..");
-
-					System.out.println(""+ User2.Username2 + " it's your turn to roll..");
 
 					
 					int DiceFourComp = getDice.RandomFour();
@@ -65,11 +91,9 @@ public class DiceOptionMulti {
 					 getPoint.addUser2(DiceFourComp);
 					System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
 
-					System.out.println(""+ User2.Username2 + " dice landed on " + DiceFourComp);
-					 getPoint.addUser2(DiceFourComp);
-					System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
 
 					System.out.println("-------------------------------");
+					counter ++;
 				}
 				
 
@@ -97,8 +121,6 @@ public class DiceOptionMulti {
 
 						System.out.println("" +User2.Username2+ " it's your turn to roll..");
 
-						System.out.println(""+ User2.Username2 + " it's your turn to roll..");
-
 						
 						int DiceSixComp = getDice.RandomSix();
 						
@@ -107,10 +129,6 @@ public class DiceOptionMulti {
 						System.out.println("" +User2.Username2+ " dice landed on " + DiceSixComp);
 						 getPoint.addUser2(DiceSixComp);
 						System.out.println("" +User2.Username2+ " current points: " + getPoint.User2Point );
-
-						System.out.println(""+ User2.Username2 + " dice landed on " + DiceSixComp);
-						 getPoint.addUser2(DiceSixComp);
-						System.out.println(""+ User2.Username2 + " current points: " + getPoint.User2Point );
 
 						System.out.println("-------------------------------");
 					}
