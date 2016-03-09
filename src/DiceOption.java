@@ -5,13 +5,13 @@ public class DiceOption {
 	RandomInteger getDice = new RandomInteger();
 	PointEngine getPoint = new PointEngine();
 	
-	
 	boolean run = true;
 	int choice = 0;
 	
 	Scanner keyboard =new Scanner (System.in); 
 	int DiceSix = getDice.RandomSix();
 	int DiceFour = getDice.RandomFour();
+	Time OneSec = new Time();
 	
 	public void Dice(){
 		
@@ -32,9 +32,23 @@ public class DiceOption {
 			if (choice ==1){
 				System.out.println("Good choice. Let the games begin!");
 				
+				
+				//here
+				OneSec.OneSecond(); 
+				
 				System.out.println("Your dice landed on " + DiceFour);
 				 getPoint.addPoints(DiceFour);
-				System.out.println("Your current points: ", getPoint.point );
+				System.out.println("Your current points: " + getPoint.point );
+				
+				OneSec.OneSecond();
+				
+				System.out.println("Computer is now rolling..");
+				
+				OneSec.OneSecond();
+				System.out.println("It's dice landed on " + DiceFour);
+				 getPoint.addPoints(DiceFour);
+				System.out.println("It's current points: " + getPoint.CompPoint );
+				//here
 				break;
 			}else if (choice == 2){
 				System.out.println("Good choice. Let the games begin!");
@@ -62,6 +76,5 @@ public class DiceOption {
 		
 		
 		}
-		System.out.println("You roll the first Dice!");
 		}
 	}
