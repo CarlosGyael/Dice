@@ -64,12 +64,63 @@ public class DiceOption {
 		}	else if (choice == 2){
 				System.out.println("Good choice. Let the games begin!");
 				
+				while (getPoint.point < 50 && getPoint.CompPoint < 50){
+					
+					int DiceSix = getDice.RandomSix();
+						
+
+					OneSec.TwoSeconds(); 
+					
+					System.out.println("It's your turn to roll..");
+					
+					System.out.println("Your dice landed on " + DiceSix);
+					 getPoint.addPoints(DiceSix);
+					System.out.println("Your current points: " + getPoint.point );
+					
+					OneSec.TwoSeconds();
+					
+					System.out.println("Computer is now rolling..");
+					
+					int DiceSixComp = getDice.RandomSix();
+					
+					OneSec.OneSecond();
+					System.out.println("It's dice landed on " + DiceSixComp);
+					 getPoint.addComp(DiceSixComp);
+					System.out.println("It's current points: " + getPoint.CompPoint );
+					System.out.println("-------------------------------");
+				}
 				
-				System.out.println("Your dice landed on " + DiceSix);
-				break;
+				
 			}else if (choice == 3){
 				System.out.println("Good choice. Let the games begin!");
-				break;
+				
+				while (getPoint.point < 50 && getPoint.CompPoint < 50){
+					
+					int DiceEight = getDice.RandomEight();
+						
+
+					OneSec.TwoSeconds(); 
+					
+					System.out.println("It's your turn to roll..");
+					
+					System.out.println("Your dice landed on " + DiceEight);
+					 getPoint.addPoints(DiceEight);
+					System.out.println("Your current points: " + getPoint.point );
+					
+					OneSec.TwoSeconds();
+					
+					System.out.println("Computer is now rolling..");
+					
+					int DiceEightComp = getDice.RandomEight();
+					
+					OneSec.OneSecond();
+					System.out.println("It's dice landed on " + DiceEightComp);
+					 getPoint.addComp(DiceEightComp);
+					System.out.println("It's current points: " + getPoint.CompPoint );
+					System.out.println("-------------------------------");
+				}
+				
+				
 			}else if (choice == 4){
 				System.out.println("Good choice. Let the games begin!");
 				break;
