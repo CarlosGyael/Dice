@@ -15,7 +15,7 @@ public class DiceOption {
 	Time OneSec = new Time();
 	
 	public void Dice(){
-		int money = getPoint.Money;
+		
 		while (run){
 			OneSec.OneSecond();
 		System.out.println("Please choose the dice you want to use:");
@@ -32,35 +32,23 @@ public class DiceOption {
 		
 			
 			if (choice ==1){
-				System.out.println("Your start with a total of $500");
-				int counter =1;
+				System.out.println("Good choice. Let the games begin!");
+				int counter =0;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
 					
 					if (counter >0){
 						OneSec.OneSecond();
-						System.out.println("How much would you like to put into the next roll?");
-						System.out.println("1. $50");
-						System.out.println("2. $100");
-						System.out.println("3. $150");
-						System.out.println("4. None (return to Start Menu)"); 
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu)"); 
 						
 						choice = keyboard.nextInt();
 						
 						if (choice ==1){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $50");
-							getPoint.addMoney(50);
-						}else if(choice ==2){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $100");
-							getPoint.addMoney(100);
-						}else if(choice ==3){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $150");
-							getPoint.addMoney(150);
-						}else if (choice ==4){
+							
+						}else if (choice ==2){
 							menu menu = new menu();
 							menu.StartMenu();
 						}
@@ -81,7 +69,7 @@ public class DiceOption {
 				
 				OneSec.TwoSeconds();
 				
-				System.out.println("Computer is Now rolling..");
+				System.out.println("Computer is now rolling..");
 				
 				int DiceFourComp = getDice.RandomFour();
 				
@@ -96,36 +84,24 @@ public class DiceOption {
 
 				
 		}	else if (choice == 2){
-				System.out.println("Your start with a total of $500");
+				System.out.println("Good choice. Let the games begin!");
 				
-int counter =1;
+int counter =0;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
 					
 					if (counter >0){
 						OneSec.OneSecond();
-						System.out.println("How much would you like to put into the next roll?");
-						System.out.println("1. $50");
-						System.out.println("2. $100");
-						System.out.println("3. $150");
-						System.out.println("4. None (return to Start Menu)"); 
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
 						if (choice ==1){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $50");
-							getPoint.addMoney(50);
-						}else if(choice ==2){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $100");
-							getPoint.addMoney(100);
-						}else if(choice ==3){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $150");
-							getPoint.addMoney(150);
-						}else if (choice ==4){
+							
+						}else if (choice ==2){
 							menu menu = new menu();
 							menu.StartMenu();
 						}
@@ -145,7 +121,7 @@ int counter =1;
 					
 					OneSec.TwoSeconds();
 					
-					System.out.println("Computer is Now rolling..");
+					System.out.println("Computer is now rolling..");
 					
 					int DiceSixComp = getDice.RandomSix();
 					
@@ -159,36 +135,24 @@ int counter =1;
 				
 				
 			}else if (choice == 3){
-				System.out.println("Your start with a total of $500");
+				System.out.println("Good choice. Let the games begin!");
 				
-int counter =1;
+int counter =0;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
 					
 					if (counter >0){
 						OneSec.OneSecond();
-						System.out.println("How much would you like to put into the next roll?");
-						System.out.println("1. $50");
-						System.out.println("2. $100");
-						System.out.println("3. $150");
-						System.out.println("4. None (return to Start Menu)"); 
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
 						if (choice ==1){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $50");
-							getPoint.addMoney(50);
-						}else if(choice ==2){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $100");
-							getPoint.addMoney(100);
-						}else if(choice ==3){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $150");
-							getPoint.addMoney(150);
-						}else if (choice ==4){
+							
+						}else if (choice ==2){
 							menu menu = new menu();
 							menu.StartMenu();
 						}
@@ -208,7 +172,7 @@ int counter =1;
 					
 					OneSec.TwoSeconds();
 					
-					System.out.println("Computer is Now rolling..");
+					System.out.println("Computer is now rolling..");
 					
 					int DiceEightComp = getDice.RandomEight();
 					
@@ -223,36 +187,24 @@ int counter =1;
 				
 			}else if (choice == 4){
 				
-				System.out.println("Your start with a total of $500");
+				System.out.println("Good choice. Let the games begin!");
 				
-int counter =1;
+int counter =0;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
 					
 					if (counter >0){
 						OneSec.OneSecond();
-						System.out.println("How much would you like to put into the next roll?");
-						System.out.println("1. $50");
-						System.out.println("2. $100");
-						System.out.println("3. $150");
-						System.out.println("4. None (return to Start Menu)"); 
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
 						if (choice ==1){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $50");
-							getPoint.addMoney(50);
-						}else if(choice ==2){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $100");
-							getPoint.addMoney(100);
-						}else if(choice ==3){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $150");
-							getPoint.addMoney(150);
-						}else if (choice ==4){
+							
+						}else if (choice ==2){
 							menu menu = new menu();
 							menu.StartMenu();
 						}
@@ -272,7 +224,7 @@ int counter =1;
 					
 					OneSec.TwoSeconds();
 					
-					System.out.println("Computer is Now rolling..");
+					System.out.println("Computer is now rolling..");
 					
 					int DiceTenComp = getDice.RandomFour();
 					
@@ -284,35 +236,23 @@ int counter =1;
 					counter++;
 				}
 			}else if (choice == 5){
-				System.out.println("Your start with a total of $500");
-int counter =1;
+				System.out.println("Good choice. Let the games begin!");
+int counter =0;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
 					
 					if (counter >0){
 						OneSec.OneSecond();
-						System.out.println("How much would you like to put into the next roll?");
-						System.out.println("1. $50");
-						System.out.println("2. $100");
-						System.out.println("3. $150");
-						System.out.println("4. None (return to Start Menu)"); 
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
 						if (choice ==1){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $50");
-							getPoint.addMoney(50);
-						}else if(choice ==2){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $100");
-							getPoint.addMoney(100);
-						}else if(choice ==3){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $150");
-							getPoint.addMoney(150);
-						}else if (choice ==4){
+							
+						}else if (choice ==2){
 							menu menu = new menu();
 							menu.StartMenu();
 						}
@@ -332,7 +272,7 @@ int counter =1;
 					
 					OneSec.TwoSeconds();
 					
-					System.out.println("Computer is Now rolling..");
+					System.out.println("Computer is now rolling..");
 					
 					int DiceTwelveComp = getDice.RandomFour();
 					
@@ -344,35 +284,23 @@ int counter =1;
 					counter++;
 				}
 			}else if (choice == 6){
-				System.out.println("Your start with a total of $500");
-int counter =1;
+				System.out.println("Good choice. Let the games begin!");
+int counter =0;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
 					
 					if (counter >0){
 						OneSec.OneSecond();
-						System.out.println("How much would you like to put into the next roll?");
-						System.out.println("1. $50");
-						System.out.println("2. $100");
-						System.out.println("3. $150");
-						System.out.println("4. None (return to Start Menu)"); 
+						System.out.println("Would you like to re-roll?");
+						System.out.println("1. Yes");
+						System.out.println("2. No (return to Start Menu)");
 						
 						choice = keyboard.nextInt();
 						
 						if (choice ==1){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $50");
-							getPoint.addMoney(50);
-						}else if(choice ==2){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $100");
-							getPoint.addMoney(100);
-						}else if(choice ==3){
-							OneSec.TwoSeconds();
-							System.out.println("You bet $150");
-							getPoint.addMoney(150);
-						}else if (choice ==4){
+							
+						}else if (choice ==2){
 							menu menu = new menu();
 							menu.StartMenu();
 						}
@@ -392,7 +320,7 @@ int counter =1;
 					
 					OneSec.TwoSeconds();
 					
-					System.out.println("Computer is Now rolling..");
+					System.out.println("Computer is now rolling..");
 					
 					int DiceTwentyComp = getDice.RandomTwenty();
 					
