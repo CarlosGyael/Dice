@@ -32,14 +32,14 @@ public class DiceOptionMulti {
 			
 			
 				if (choice ==1){
-					System.out.println("Good choice. Let the games begin!");
+					System.out.println("Your start with a total of $500");
 					
 					int counter =0;
 					while (getPoint.point < 50 && getPoint.User2Point < 50){
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println(User.Username+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -52,7 +52,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println(User2.Username2+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -99,7 +99,7 @@ public class DiceOptionMulti {
 
 					
 			}	else if (choice == 2){
-					System.out.println("Good choice. Let the games begin!");
+					System.out.println("Your start with a total of $500");
 					
 					int counter = 0;
 					
@@ -107,7 +107,7 @@ public class DiceOptionMulti {
 					
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println(User.Username+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -120,7 +120,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println(User2.Username2+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -166,7 +166,7 @@ public class DiceOptionMulti {
 					
 					
 				}else if (choice == 3){
-					System.out.println("Good choice. Let the games begin!");
+					System.out.println("Your start with a total of $500");
 					
 					int counter = 0;
 					
@@ -174,7 +174,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println(User.Username+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -187,7 +187,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println(User2.Username2+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -237,7 +237,7 @@ public class DiceOptionMulti {
 					
 				}else if (choice == 4){
 					
-					System.out.println("Good choice. Let the games begin!");
+					System.out.println("Your start with a total of $500");
 					
 					int counter = 0;
 					
@@ -245,7 +245,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println(User.Username+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -258,7 +258,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println(User2.Username2+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -306,7 +306,7 @@ public class DiceOptionMulti {
 						counter++;
 					}
 				}else if (choice == 5){
-					System.out.println("Good choice. Let the games begin!");
+					System.out.println("Your start with a total of $500");
 					
 					int counter = 0;
 					
@@ -314,7 +314,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println(User.Username+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -327,7 +327,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println(User2.Username2+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -373,7 +373,7 @@ public class DiceOptionMulti {
 						counter++;
 					}
 				}else if (choice == 6){
-					System.out.println("Good choice. Let the games begin!");
+					System.out.println("Your start with a total of $500");
 					
 					int counter = 0;
 					
@@ -381,7 +381,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+" would you like to re-roll?");
+							System.out.println(User.Username+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
@@ -394,7 +394,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println(User2.Username2+" would you like to re-roll?");
+							System.out.println(User2.Username2+" How much would you like to put into the next roll?");
 							System.out.println("1. Yes");
 							System.out.println("2. No (return to Start Menu)");
 							
