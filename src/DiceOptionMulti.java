@@ -5,7 +5,8 @@ public class DiceOptionMulti {
 	RandomInteger getDice = new RandomInteger();
 	PointEngine getPoint = new PointEngine();
 	
-	
+	int betTotal;
+	int betTotal2;
 	
 	boolean run = true;
 	int choice = 0;
@@ -14,9 +15,9 @@ public class DiceOptionMulti {
 	int DiceSix = getDice.RandomSix();
 	
 	Time OneSec = new Time();
-	int betTotal;
-	int player1 =getPoint.Money + betTotal;
-	int player2 = getPoint.Money2 + betTotal;
+	
+	
+	
 	public void DiceMulti(UserPlayer User , Multiplayer User2 ){
 		
 		//Multiplayer User2 = new Multiplayer();
@@ -43,6 +44,7 @@ public class DiceOptionMulti {
 					while (getPoint.point < 50 && getPoint.User2Point < 50){
 						
 						if (counter >0){
+							
 							OneSec.OneSecond();
 							System.out.println(User.Username+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
@@ -55,17 +57,17 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
-								betTotal = 25;
+								betTotal = 50 +25;
 								getPoint.addMoney(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
-								betTotal = 50;
+								betTotal = 100 +50;
 								getPoint.addMoney(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
-								betTotal = 75;
+								betTotal = 150 +75;
 								getPoint.addMoney(150);
 							}else if (choice ==4){
 								menu menu = new menu();
@@ -83,25 +85,28 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
-								betTotal = 25;
+								betTotal2 = 50 + 25;
 								getPoint.addMoney2(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
-								betTotal = 50;
+								betTotal2 = 100 + 50;
 								getPoint.addMoney2(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
-								betTotal = 75;
+								betTotal2 = 150 + 75;
 								getPoint.addMoney2(150);
 							}else if (choice ==4){
 								menu menu = new menu();
 								menu.StartMenu();
 							}
 						}
-						
+					int player1 =getPoint.Money + betTotal;
+					int player2 = getPoint.Money2 + betTotal2;	
 					int DiceFour = getDice.RandomFour();
+					int Player1Result =player1;
+					int Player2Result = player2;
 						
 
 					OneSec.TwoSeconds(); 
@@ -131,11 +136,27 @@ public class DiceOptionMulti {
 					
 					if ( getPoint.point > getPoint.User2Point){
 						System.out.println(User.Username + " Your total is now: " + player1);
+						getPoint.Money2();
 					}else if(getPoint.point < getPoint.User2Point){
 						System.out.println(User2.Username2 + " Your total is now: " + player2);
+						getPoint.Money();
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						getPoint.addMoney3(0);
+						getPoint.addMoney4(0);
 					}
-					System.out.println(User.Username+ " amount: " + getPoint.Money);
-					System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					if ( getPoint.point > getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + Player1Result);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}else if(getPoint.point < getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + Player2Result);
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}
+					
 					counter ++;
 				}
 				
@@ -150,7 +171,7 @@ public class DiceOptionMulti {
 					
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -161,14 +182,17 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
+								betTotal = 50 +25;
 								getPoint.addMoney(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
+								betTotal = 100 +50;
 								getPoint.addMoney(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
+								betTotal = 150 +75;
 								getPoint.addMoney(150);
 							}else if (choice ==4){
 								menu menu = new menu();
@@ -186,25 +210,28 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
-								betTotal = 25;
+								betTotal2 = 50 + 25;
 								getPoint.addMoney2(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
-								betTotal = 50;
+								betTotal2 = 100 + 50;
 								getPoint.addMoney2(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
-								betTotal = 75;
+								betTotal2 = 150 + 75;
 								getPoint.addMoney2(150);
 							}else if (choice ==4){
 								menu menu = new menu();
 								menu.StartMenu();
 							}
 						}
-						
+					int player1 =getPoint.Money + betTotal;
+					int player2 = getPoint.Money2 + betTotal2;	
 					int DiceFour = getDice.RandomFour();
+					int Player1Result =player1;
+					int Player2Result = player2;
 						
 
 					OneSec.TwoSeconds(); 
@@ -233,13 +260,29 @@ public class DiceOptionMulti {
 					System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 					
 					if ( getPoint.point > getPoint.User2Point){
-						System.out.println(User.Username + "Your total is now: " + getPoint.Money + betTotal);
+						System.out.println(User.Username + " Your total is now: " + player1);
+						getPoint.Money2();
 					}else if(getPoint.point < getPoint.User2Point){
-						System.out.println(User2.Username2 + "Your total is now: " + getPoint.Money2+betTotal);
+						System.out.println(User2.Username2 + " Your total is now: " + player2);
+						getPoint.Money();
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						getPoint.addMoney3(0);
+						getPoint.addMoney4(0);
 					}
-					System.out.println(User.Username+ " amount: " + getPoint.Money);
-					System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
-						counter++;
+					if ( getPoint.point > getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + Player1Result);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}else if(getPoint.point < getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + Player2Result);
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}
+					
+					counter ++;
 					}
 					
 					
@@ -252,7 +295,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -263,14 +306,17 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
+								betTotal = 50 +25;
 								getPoint.addMoney(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
+								betTotal = 100 +50;
 								getPoint.addMoney(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
+								betTotal = 150 +75;
 								getPoint.addMoney(150);
 							}else if (choice ==4){
 								menu menu = new menu();
@@ -288,25 +334,28 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
-								betTotal = 25;
+								betTotal2 = 50 + 25;
 								getPoint.addMoney2(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
-								betTotal = 50;
+								betTotal2 = 100 + 50;
 								getPoint.addMoney2(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
-								betTotal = 75;
+								betTotal2 = 150 + 75;
 								getPoint.addMoney2(150);
 							}else if (choice ==4){
 								menu menu = new menu();
 								menu.StartMenu();
 							}
 						}
-						
+					int player1 =getPoint.Money + betTotal;
+					int player2 = getPoint.Money2 + betTotal2;	
 					int DiceFour = getDice.RandomFour();
+					int Player1Result =player1;
+					int Player2Result = player2;
 						
 
 					OneSec.TwoSeconds(); 
@@ -335,13 +384,29 @@ public class DiceOptionMulti {
 					System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 					
 					if ( getPoint.point > getPoint.User2Point){
-						System.out.println(User.Username + "Your total is now: " + getPoint.Money + betTotal);
+						System.out.println(User.Username + " Your total is now: " + player1);
+						getPoint.Money2();
 					}else if(getPoint.point < getPoint.User2Point){
-						System.out.println(User2.Username2 + "Your total is now: " + getPoint.Money2+betTotal);
+						System.out.println(User2.Username2 + " Your total is now: " + player2);
+						getPoint.Money();
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						getPoint.addMoney3(0);
+						getPoint.addMoney4(0);
 					}
-					System.out.println(User.Username+ " amount: " + getPoint.Money);
-					System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
-						counter++;
+					if ( getPoint.point > getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + Player1Result);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}else if(getPoint.point < getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + Player2Result);
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}
+					
+					counter ++;
 					}
 					
 					
@@ -355,7 +420,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -366,14 +431,17 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
+								betTotal = 50 +25;
 								getPoint.addMoney(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
+								betTotal = 100 +50;
 								getPoint.addMoney(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
+								betTotal = 150 +75;
 								getPoint.addMoney(150);
 							}else if (choice ==4){
 								menu menu = new menu();
@@ -391,25 +459,28 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
-								betTotal = 25;
+								betTotal2 = 50 + 25;
 								getPoint.addMoney2(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
-								betTotal = 50;
+								betTotal2 = 100 + 50;
 								getPoint.addMoney2(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
-								betTotal = 75;
+								betTotal2 = 150 + 75;
 								getPoint.addMoney2(150);
 							}else if (choice ==4){
 								menu menu = new menu();
 								menu.StartMenu();
 							}
 						}
-						
+					int player1 =getPoint.Money + betTotal;
+					int player2 = getPoint.Money2 + betTotal2;	
 					int DiceFour = getDice.RandomFour();
+					int Player1Result =player1;
+					int Player2Result = player2;
 						
 
 					OneSec.TwoSeconds(); 
@@ -438,13 +509,29 @@ public class DiceOptionMulti {
 					System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 					
 					if ( getPoint.point > getPoint.User2Point){
-						System.out.println(User.Username + "Your total is now: " + getPoint.Money + betTotal);
+						System.out.println(User.Username + " Your total is now: " + player1);
+						getPoint.Money2();
 					}else if(getPoint.point < getPoint.User2Point){
-						System.out.println(User2.Username2 + "Your total is now: " + getPoint.Money2+betTotal);
+						System.out.println(User2.Username2 + " Your total is now: " + player2);
+						getPoint.Money();
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						getPoint.addMoney3(0);
+						getPoint.addMoney4(0);
 					}
-					System.out.println(User.Username+ " amount: " + getPoint.Money);
-					System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
-						counter++;
+					if ( getPoint.point > getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + Player1Result);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}else if(getPoint.point < getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + Player2Result);
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}
+					
+					counter ++;
 					}
 				}else if (choice == 5){
 					System.out.println("Your start with a total of $500");
@@ -455,7 +542,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -466,14 +553,17 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
+								betTotal = 50 +25;
 								getPoint.addMoney(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
+								betTotal = 100 +50;
 								getPoint.addMoney(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
+								betTotal = 150 +75;
 								getPoint.addMoney(150);
 							}else if (choice ==4){
 								menu menu = new menu();
@@ -491,25 +581,28 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
-								betTotal = 25;
+								betTotal2 = 50 + 25;
 								getPoint.addMoney2(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
-								betTotal = 50;
+								betTotal2 = 100 + 50;
 								getPoint.addMoney2(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
-								betTotal = 75;
+								betTotal2 = 150 + 75;
 								getPoint.addMoney2(150);
 							}else if (choice ==4){
 								menu menu = new menu();
 								menu.StartMenu();
 							}
 						}
-						
+					int player1 =getPoint.Money + betTotal;
+					int player2 = getPoint.Money2 + betTotal2;	
 					int DiceFour = getDice.RandomFour();
+					int Player1Result =player1;
+					int Player2Result = player2;
 						
 
 					OneSec.TwoSeconds(); 
@@ -538,13 +631,29 @@ public class DiceOptionMulti {
 					System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 					
 					if ( getPoint.point > getPoint.User2Point){
-						System.out.println(User.Username + "Your total is now: " + getPoint.Money + betTotal);
+						System.out.println(User.Username + " Your total is now: " + player1);
+						getPoint.Money2();
 					}else if(getPoint.point < getPoint.User2Point){
-						System.out.println(User2.Username2 + "Your total is now: " + getPoint.Money2+betTotal);
+						System.out.println(User2.Username2 + " Your total is now: " + player2);
+						getPoint.Money();
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						getPoint.addMoney3(0);
+						getPoint.addMoney4(0);
 					}
-					System.out.println(User.Username+ " amount: " + getPoint.Money);
-					System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
-						counter++;
+					if ( getPoint.point > getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + Player1Result);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}else if(getPoint.point < getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + Player2Result);
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}
+					
+					counter ++;
 					}
 				}else if (choice == 6){
 					System.out.println("Your start with a total of $500");
@@ -555,7 +664,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -566,14 +675,17 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
+								betTotal = 50 +25;
 								getPoint.addMoney(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
+								betTotal = 100 +50;
 								getPoint.addMoney(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
+								betTotal = 150 +75;
 								getPoint.addMoney(150);
 							}else if (choice ==4){
 								menu menu = new menu();
@@ -591,25 +703,28 @@ public class DiceOptionMulti {
 							if (choice ==1){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $50");
-								betTotal = 25;
+								betTotal2 = 50 + 25;
 								getPoint.addMoney2(50);
 							}else if(choice ==2){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $100");
-								betTotal = 50;
+								betTotal2 = 100 + 50;
 								getPoint.addMoney2(100);
 							}else if(choice ==3){
 								OneSec.TwoSeconds();
 								System.out.println("You bet $150");
-								betTotal = 75;
+								betTotal2 = 150 + 75;
 								getPoint.addMoney2(150);
 							}else if (choice ==4){
 								menu menu = new menu();
 								menu.StartMenu();
 							}
 						}
-						
+					int player1 =getPoint.Money + betTotal;
+					int player2 = getPoint.Money2 + betTotal2;	
 					int DiceFour = getDice.RandomFour();
+					int Player1Result =player1;
+					int Player2Result = player2;
 						
 
 					OneSec.TwoSeconds(); 
@@ -638,13 +753,29 @@ public class DiceOptionMulti {
 					System.out.println(User.Username + " current points: " + getPoint.point +" ---------------- " +User2.Username2+ " current points: " + getPoint.User2Point );
 					
 					if ( getPoint.point > getPoint.User2Point){
-						System.out.println(User.Username + "Your total is now: " + getPoint.Money + betTotal);
+						System.out.println(User.Username + " Your total is now: " + player1);
+						getPoint.Money2();
 					}else if(getPoint.point < getPoint.User2Point){
-						System.out.println(User2.Username2 + "Your total is now: " + getPoint.Money2+betTotal);
+						System.out.println(User2.Username2 + " Your total is now: " + player2);
+						getPoint.Money();
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						getPoint.addMoney3(0);
+						getPoint.addMoney4(0);
 					}
-					System.out.println(User.Username+ " amount: " + getPoint.Money);
-					System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
-						counter++;
+					if ( getPoint.point > getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + Player1Result);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}else if(getPoint.point < getPoint.User2Point){
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + Player2Result);
+					}else if(getPoint.point == getPoint.User2Point){
+						System.out.println(User2.Username2 + " and  "+User.Username+" Your money is refunded!");
+						System.out.println(User.Username+ " amount: " + getPoint.Money);
+						System.out.println(User2.Username2+ " amount: " + getPoint.Money2);
+					}
+					
+					counter ++;
 					}
 				}
 				else {
