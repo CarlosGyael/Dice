@@ -27,7 +27,7 @@ public class PointEngine {
 		return Money;
 	}
 	public void addMoney(int newmoney){
-		User2Point-=newmoney;
+		Money-=newmoney;
 	}
 	
 }
