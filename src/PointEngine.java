@@ -36,5 +36,11 @@ public class PointEngine {
 	public void addMoney2(int newmoney){
 		Money2-=newmoney;
 	}
+	public void addMoney3(int newmoney){
+		Money+=newmoney;
+	}
+	public void addMoney4(int newmoney){
+		Money2+=newmoney;
+	}
 	
 }
