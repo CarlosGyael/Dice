@@ -4,6 +4,7 @@ public class PointEngine {
 	public int CompPoint = 0;
 	public int User2Point = 0;
 	public int Money = 500;
+	public int Money2 = 500;
 	
 	public int getPoints(){
 		return point;
@@ -28,6 +29,12 @@ public class PointEngine {
 	}
 	public void addMoney(int newmoney){
 		Money-=newmoney;
+	}
+	public int Money2(){
+		return Money;
+	}
+	public void addMoney2(int newmoney){
+		Money2-=newmoney;
 	}
 	
 }
