@@ -34,7 +34,7 @@ public class DiceOptionMulti {
 				if (choice ==1){
 					System.out.println("Your start with a total of $500");
 					
-					int counter =0;
+					int counter =1;
 					while (getPoint.point < 50 && getPoint.User2Point < 50){
 						
 						if (counter >0){

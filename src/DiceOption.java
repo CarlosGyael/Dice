@@ -33,7 +33,7 @@ public class DiceOption {
 			
 			if (choice ==1){
 				System.out.println("Your start with a total of $500");
-				int counter =0;
+				int counter =1;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
@@ -98,7 +98,7 @@ public class DiceOption {
 		}	else if (choice == 2){
 				System.out.println("Your start with a total of $500");
 				
-int counter =0;
+int counter =1;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
@@ -161,7 +161,7 @@ int counter =0;
 			}else if (choice == 3){
 				System.out.println("Your start with a total of $500");
 				
-int counter =0;
+int counter =1;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
@@ -225,7 +225,7 @@ int counter =0;
 				
 				System.out.println("Your start with a total of $500");
 				
-int counter =0;
+int counter =1;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
@@ -285,7 +285,7 @@ int counter =0;
 				}
 			}else if (choice == 5){
 				System.out.println("Your start with a total of $500");
-int counter =0;
+int counter =1;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
@@ -345,7 +345,7 @@ int counter =0;
 				}
 			}else if (choice == 6){
 				System.out.println("Your start with a total of $500");
-int counter =0;
+int counter =1;
 				
 				while (getPoint.point < 50 && getPoint.CompPoint < 50){
 					
