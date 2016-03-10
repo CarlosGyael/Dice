@@ -42,7 +42,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -67,7 +67,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User2.Username2+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -134,7 +134,7 @@ public class DiceOptionMulti {
 					
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -159,7 +159,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User2.Username2+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -225,7 +225,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -250,7 +250,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User2.Username2+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -320,7 +320,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -345,7 +345,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User2.Username2+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -413,7 +413,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -438,7 +438,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User2.Username2+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -504,7 +504,7 @@ public class DiceOptionMulti {
 						
 						if (counter >0){
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User.Username+ ":"  + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
@@ -529,7 +529,7 @@ public class DiceOptionMulti {
 								menu.StartMenu();
 							}
 							OneSec.OneSecond();
-							System.out.println("How much would you like to put into the next roll?");
+							System.out.println(User2.Username2+ ":" + "How much would you like to put into the next roll?");
 							System.out.println("1. $50");
 							System.out.println("2. $100");
 							System.out.println("3. $150");
